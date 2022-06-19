@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tela príncipal rede social</title>
+  </head>
+  <body>
+    <div id="content1">
+      <!-- perfil -->
+      <div id="search"></div>
+
+      <div id="perfil">
+        <div class="img">
+          <!-- imagem de cabeçalho card foto do usuário -->
+          <img
+            src="https://img.elo7.com.br/product/600x380/2449C5E/papel-de-parede-escola-matematica-estudo-infantil-gg592-painel-adesivo-abstrato.jpg"
+            alt="Main user/onwer"
+          />
+          <!-- Foto do usuário -->
+          <div class="photoUser"></div>
+        </div>
+        <div id="namePerfil">
+          <h2><span>Cláudio Iwakami</span></h2>
+          <p><span>Senior UI/UX Design</span></p>
+        </div>
+        <div class="dataUserContent">
+          <div class="dataUser">
+            <table>
+              <tr>
+                <td>
+                  <p class="dataUserFol">6,866</p>
+                  <span>Followers</span>
+                </td>
+                <td></td>
+                <td>
+                  <p class="dataUserFol">1</p>
+                  <span>Following</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <a href="#">My Profile</a>
+      </div>
+
+      <!-- perfil -->
+
+      <!-- Seguidores -->
+
+      <div class="follows">
+        <ul>
+          <p>Who is following you</p>
+          <li>
+            <div class="followingsOptions">
+              <img
+                src="https://i.pinimg.com/originals/2e/08/28/2e082815c4d9e35e801acd92c5f6b12d.jpg"
+                alt="User1"
+              />
+              <div class="idUser">
+                <p>Will Smith</p>
+                <span>@WillSmith</span>
+              </div>
+              
+              <a href="#">Follow</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="followingsOptions">
+              <img
+                src="https://i.pinimg.com/originals/2e/08/28/2e082815c4d9e35e801acd92c5f6b12d.jpg"
+                alt="User1"
+              />
+              <div class="idUser">
+                <p>Will Smith</p>
+                <span>@WillSmith</span>
+              </div>
+              <a href="#">Follow</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="followingsOptions">
+              <img
+                src="https://i.pinimg.com/originals/2e/08/28/2e082815c4d9e35e801acd92c5f6b12d.jpg"
+                alt="User1"
+              />
+              <div class="idUser">
+                <p>Will Smith</p>
+                <span>@WillSmith</span>
+              </div>
+              <a href="#">Follow</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Seguidores -->
+    </div>
+
+
+
+
+
+
+    <div id="content2">
+      <header>
+        <div class="headerSearch">
+            <img
+            src="https://i.pinimg.com/originals/2e/08/28/2e082815c4d9e35e801acd92c5f6b12d.jpg"
+            alt="User1"
+            alt=""
+          />
+          <input type="text" placeholder="What's happening?"/>
+        </div>
+        
+        <div class="iconsHeader">
+            <img src="data:image/png;base64,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" alt="icon Photo">
+            <p>Photo</p>
+            
+            <img src="https://www.concessionariatamoios.com.br/images/video_graphic.png" alt="icon video">
+            <p>Video</p>
+            
+            <img src="https://informa.solutions/wp-content/uploads/2020/06/localization-300x300.png" alt="icon video">
+            <p>Localization</p>
+            
+            <img src="https://www.freeiconspng.com/thumbs/calendar-image-png/calendar-image-png-3.png" alt="icon video">
+            <p>Calendar</p>
+            
+            <a href="#">Follow</a>
+      </header>
+
+      <div class="icons"></div>
+      <aside></aside>
+      
+      <!-- Postagens do Usuários -->
+      <main>
+        <div class="blockPost">
+            <div class="post">
+                <img src="https://static.wixstatic.com/media/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg/v1/fit/w_484,h_337,q_90/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg" alt="Postagem">
+                
+                <div class="iconsPostagem">
+                    <img src="https://toppng.com/public/uploads/thumbnail/coracao-115507187821dyvokausr.png" alt="like">
+                    <img src="https://cdn-icons-png.flaticon.com/512/15/15992.png" alt="icone comentário">
+                    <img src="https://www.nicepng.com/png/full/95-955629_paper-plane-instagram-share-icon-png.png" alt="icon share">
+                </div>
+                <span>2300 likes</span>
+                <p><span class="hashtag">Tzuyu</span> 🎓Very good #I love biology</p>
+            </div>
+            
+            <div class="post">
+                <img src="https://static.wixstatic.com/media/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg/v1/fit/w_484,h_337,q_90/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg" alt="Postagem">
+                
+                <div class="iconsPostagem">
+                    <img src="https://toppng.com/public/uploads/thumbnail/coracao-115507187821dyvokausr.png" alt="like">
+                    <img src="https://cdn-icons-png.flaticon.com/512/15/15992.png" alt="icone comentário">
+                    <img src="https://www.nicepng.com/png/full/95-955629_paper-plane-instagram-share-icon-png.png" alt="icon share">
+                </div>
+                <span>2300 likes</span>
+                <p><span class="hashtag">Tzuyu</span> 🎓Very good #I love biology</p>
+            </div>
+            
+            <div class="post">
+                <img src="https://static.wixstatic.com/media/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg/v1/fit/w_484,h_337,q_90/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg" alt="Postagem">
+                
+                <div class="iconsPostagem">
+                    <img src="https://toppng.com/public/uploads/thumbnail/coracao-115507187821dyvokausr.png" alt="like">
+                    <img src="https://cdn-icons-png.flaticon.com/512/15/15992.png" alt="icone comentário">
+                    <img src="https://www.nicepng.com/png/full/95-955629_paper-plane-instagram-share-icon-png.png" alt="icon share">
+                </div>
+                <span>2300 likes</span>
+                <p><span class="hashtag">Tzuyu</span> 🎓Very good #I love biology</p>
+            </div>
+            
+             <div class="post">
+                <img src="https://static.wixstatic.com/media/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg/v1/fit/w_484,h_337,q_90/495ef2_c544e90cca5c4e91980129a6f8072639~mv2.jpg" alt="Postagem">
+                
+                <div class="iconsPostagem">
+                    <img src="https://toppng.com/public/uploads/thumbnail/coracao-115507187821dyvokausr.png" alt="like">
+                    <img src="https://cdn-icons-png.flaticon.com/512/15/15992.png" alt="icone comentário">
+                    <img src="https://www.nicepng.com/png/full/95-955629_paper-plane-instagram-share-icon-png.png" alt="icon share">
+                </div>
+                <span>2300 likes</span>
+                <p><span class="hashtag">Tzuyu</span> 🎓Very good #I love biology</p>
+            </div>
+        </div>
+            
+        </div>
+        
+        
+        
+      </main>
+      <!-- Postagens do Usuários -->
+      <div id="foryou"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,535 @@
+html, body {
+    margin: 0;
+    width:100vw;
+    height:90vh;
+    padding: 0;
+    box-sizing: border-box;
+    background:rgb(255, 253, 253);
+    display: flex;
+}
+
+#content2 {
+    background-color: transparent;
+    width: 100%;
+    height:auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 25vh 80vh 5vh;
+    grid-gap:10px;
+    
+}
+
+#content1{
+    padding:10px;
+    width:33%;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:10vh 60vh 20vh;
+    grid-gap: 10px;
+    
+}
+
+
+
+
+
+
+/* HEADER =========================================================================================== */
+header {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 20px;
+    height:19%;
+    box-shadow:0px 0px 3px #000;
+    position:relative;
+    padding-left: 10px;
+}
+
+header .headerSearch{
+    display:flex;
+    padding:10px;
+    
+}
+
+header .headerSearch img{
+    margin-right:8px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+header .headerSearch input{
+    width:75%;
+    height:40px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background:#9999;
+    padding-left:10px;
+    color:#00EED4;
+}
+
+header .headerSearch input::placeholder{
+    color:#000;
+    opacity:50%;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10pt;    
+}
+
+header .iconsHeader {
+    width:95%;
+    border-radius:20px;
+    padding-left: 10px;
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+
+header .iconsHeader img{
+    max-width:5%;
+    width:100%;     
+    height:30px;
+    margin-right:5px;
+    cursor: pointer;
+}
+
+header .iconsHeader p{
+    font-size:1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 700;
+    margin-right:3%;
+    cursor: pointer;
+    
+}
+
+header .iconsHeader a{
+    width: 15%;
+    height:40px;
+    background:#00EED4;
+    border-radius:10px;
+    color:#ffff;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 700;
+}
+
+/* FIM HEADER ===========================================================================================*/
+
+
+
+
+
+
+
+
+
+/* Main ===========================================================================================*/
+main {
+    background-color:transparent;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    height:90%;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+
+main .blockPost{
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+main .blockPost .post{
+    width:80%;
+    height:400px;
+    border-radius: 20px;
+    box-shadow:0px 0px 3px #000;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+main .blockPost .post img{
+    max-width:100%;
+    width: 100%;
+    height:300px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main .blockPost .iconsPostagem{
+    width:100%;
+    height:25px;
+    border-radius:0px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+main .blockPost .iconsPostagem img{
+    width:25px;
+    height:25px;
+    border-radius:0px;
+}
+
+main::-webkit-scrollbar{
+    width:5px;
+}
+
+main::-webkit-scrollbar-track{
+    background-color:none;
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color:rgba(160, 160, 160, 0.267);
+    border-radius: 20px;
+}
+
+main .blockPost span{
+    margin:0px;
+    font-size:10pt;
+    padding-left: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 500;
+    opacity: 50%;
+    padding-bottom: 10px;
+}
+
+main .blockPost .hashtag{
+    margin:0px;
+    font-size:10pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 500;
+    opacity: 100%;
+    padding-bottom: 10px;
+}
+
+
+main .blockPost p{
+    margin:0px;
+    font-size:10pt;
+    padding-left: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight: 500;
+    opacity: 100%;
+    padding-bottom: 15px;
+
+}
+
+/* Fim main ===========================================================================================*/
+
+
+.icons{
+    background-color: #fff;
+    border-radius: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    height:90%;
+    border-radius: 20px;
+    box-shadow:0px 0px 3px #000
+}
+
+aside {
+    background-color: #fff;
+    border-radius: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    height:90%;
+    border-radius: 20px;
+    box-shadow:0px 0px 3px #000
+}
+
+#foryou {
+    background-color: #fff;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 20px;
+    box-shadow:0px 0px 3px #000
+}
+
+#search {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 20px;
+    box-shadow:0px 0px 3px #000
+}
+
+
+
+
+
+
+
+
+
+
+/* Bloco intermediário perfil ===========================================================================*/
+#perfil {
+    
+        grid-row-start: 2;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 341px;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: rgb(0 0 0) 0px 0px 3px;
+    
+}
+
+/* imagem atrás da foto do usuário */
+.img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+/* atributos de foto de fundo do perfil*/
+.img img {
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 85px;
+    background-position: center center;
+    object-fit: cover;
+
+}
+
+/* Foto do usuário */
+.photoUser {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    background: url('https://i.pinimg.com/originals/2e/08/28/2e082815c4d9e35e801acd92c5f6b12d.jpg') center center / cover;
+    box-shadow: rgb(0 0 0) 1px 2px 3px;
+}
+
+
+/* Config escala da foto do usuário */
+.photoUser #photo {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#namePerfil {
+    position: absolute;
+    top:38%;
+    width: 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#namePerfil h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+#namePerfil p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 30%;
+    margin: 0px;
+}
+
+/* status do usuário/ follows e following*/
+.dataUserContent {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* linha de cima e de baixo */
+.dataUserContent .dataUser {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    border-top: 2px solid rgba(153, 153, 153, 0.443);
+    border-bottom: 2px solid rgba(153, 153, 153, 0.443);
+}
+
+/* linha do meio */
+.dataUserContent .dataUser table td:nth-child(2) {
+    border-left: 2px solid rgba(153, 153, 153, 0.445);
+}
+
+/* Tablela de separação de dados */
+.dataUserContent .dataUser table {
+    width: 100%;
+    height: 80%;
+    color: #000;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* separação das letras */
+.dataUserContent .dataUser table p {
+    margin: 0;
+}
+
+/* font e tamanho das letras do perfil */
+.dataUserContent .dataUser table .dataUserFol {
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.dataUserContent .dataUser table tr td span {
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    opacity: 30%;
+}
+
+#perfil a {
+    width: 100%;
+    height: 20px;
+    top: 85%;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color:#00EED4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Fim perfil */
+
+
+
+
+
+
+
+
+
+/* Seguidores */
+.follows{
+    background-color:none;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    height:100%;
+    border-radius: 20px;
+    position: relative;
+    overflow-y:scroll;
+    margin:0;
+}
+
+.follows::-webkit-scrollbar{
+    width:10px;
+}
+
+.follows::-webkit-scrollbar-track{
+    background-color:none;
+}
+
+.follows::-webkit-scrollbar-thumb{
+    background-color:rgba(160, 160, 160, 0.425);
+    border-radius: 20px;
+}
+
+.follows .followingsOptions{
+    height:10%;
+    display:flex;
+    align-items: center;
+    margin:5px;
+}
+
+.follows ul{
+    margin: 0;
+    padding:5px;
+}
+
+.follows ul p{
+
+    color:#000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-size: 14pt;
+    font-weight: 500;
+    
+}
+
+.follows .followingsOptions .idUser{
+    padding-left: 10px;
+} 
+
+.follows .followingsOptions .idUser p{
+    color:#000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-weight:500;
+    font-size: 12pt;
+    margin:2px;
+}
+
+.follows .followingsOptions .idUser span{
+    color:#000;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:10pt;
+    margin:2px;
+    opacity:20%;
+    font-weight:600;
+}
+
+.follows ul li{
+    width: 100%;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.follows ul li img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.follows a{
+    width:80px;
+    height:35px;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#00EED4;
+    text-decoration: none;
+    color:#fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 580;    
+    margin-left:80px;
+    
+}
+/* Fim de seguidores */
+
+
